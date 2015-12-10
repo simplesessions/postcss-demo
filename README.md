@@ -25,7 +25,5 @@ Necessary? No. Fun? Yaaaaaaaassss.
 
 ## Packs
 With your powers combined...
-- [cssnext](https://github.com/cssnext/cssnext) - (Special mention because it's just pretty essential) Use tomorrow's CSS syntax, today http://cssnext.io/. Already includes things like inlining import statements and minification through cssnano, so you can leave postcss-import and cssnano out of your installed packages.
+- [cssnext](https://github.com/cssnext/cssnext) - (Special mention because it's just pretty essential) Use tomorrow's CSS syntax, today http://cssnext.io/. It also includes things like inlining import statements and minification through cssnano, so you can leave other plugins like postcss-import and cssnano out of your installed packages.
 - [rucksack](https://github.com/simplaio/rucksack) - A little bag of CSS superpowers, built on PostCSS http://simplaio.github.io/rucksack.
-- [cssnano](https://github.com/ben-eb/cssnano) -
-A modular minifier, built on top of the PostCSS ecosystem.
