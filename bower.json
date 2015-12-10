@@ -1,0 +1,20 @@
+{
+  "name": "PostCSS - Doom",
+  "version": "1.0.0",
+  "homepage": "https://github.com/simplesessions",
+  "authors": [
+    "Charles Kihe (charles@simplesessions.com)"
+  ],
+  "description": "Bower packages file",
+  "main": "dist/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
