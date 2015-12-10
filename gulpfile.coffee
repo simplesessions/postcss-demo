@@ -32,7 +32,6 @@ postcssfor               = require 'postcss-for'
 postcssmixins            = require 'postcss-mixins'
 postcssnested            = require 'postcss-nested'
 postcsspxtorem           = require 'postcss-pxtorem'
-postcsscolorfunction     = require 'postcss-center'
 rucksack                 = require 'rucksack-css'
 browsersync              = require 'browser-sync'
 buffer                   = require 'vinyl-buffer'
@@ -144,7 +143,6 @@ gulp.task 'css', ->
     postcssfocus
     postcsscenter
     postcsspxtorem
-    postcsscolorfunction
     lost
   ]
 
