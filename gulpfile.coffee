@@ -10,7 +10,6 @@ browserify               = require 'browserify'
 gulp                     = require 'gulp'
 babel                    = require 'gulp-babel'
 concat                   = require 'gulp-concat'
-cssnano                  = require 'gulp-cssnano'
 filter                   = require 'gulp-filter'
 foreach                  = require 'gulp-foreach'
 jade                     = require 'gulp-jade'
@@ -32,7 +31,6 @@ postcssfocus             = require 'postcss-focus'
 postcssfor               = require 'postcss-for'
 postcssmixins            = require 'postcss-mixins'
 postcssnested            = require 'postcss-nested'
-postcssimport            = require 'postcss-import'
 postcsspxtorem           = require 'postcss-pxtorem'
 postcsscolorfunction     = require 'postcss-center'
 rucksack                 = require 'rucksack-css'
@@ -136,7 +134,10 @@ gulp.task 'html', ->
 
 gulp.task 'css', ->
   postCSSProcessors = [
-    postcssimport from: "#{paths.src.css}/app.css"
+    cssnext               compress: { browsers: ['last 1 version'] },
+                          autoprefixer: { browsers: ['last 1 version'] },
+                          import: { from: "#{paths.src.css}/app.css" }
+    rucksack
     postcssfor
     postcssmixins
     postcssnested
@@ -144,16 +145,13 @@ gulp.task 'css', ->
     postcsscenter
     postcsspxtorem
     postcsscolorfunction
-    rucksack
     lost
-    cssnext       compress: false, autoprefixer: { browsers: ['last 1 version'] }
   ]
 
   gulp.src "#{paths.src.css}/**/[^_]*.{css,scss}"
     .pipe concat('app.css')
     .pipe sourcemaps.init()
       .pipe postcss(postCSSProcessors).on('error', onError)
-      .pipe cssnano(browsers: ['last 1 version'])
     .pipe sourcemaps.write('maps')
     .pipe gulp.dest(paths.dist.css)
     .on('error', onError)
