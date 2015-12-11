@@ -1,4 +1,17 @@
 extends layouts/_application
 
+mixin article(title, src, description)
+  article.article
+    .article__photo
+      img(src='/assets/images/'+src alt="dooooom")
+    .article__content
+      h1= title
+      if description
+        p= description
+      else
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
 block content
-  p pizza
+  main
+    .articles
+      +article('Mos Doom Kicks', 'doom-kick.png')

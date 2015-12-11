@@ -32,6 +32,9 @@ postcssfor               = require 'postcss-for'
 postcssmixins            = require 'postcss-mixins'
 postcssnested            = require 'postcss-nested'
 postcsspxtorem           = require 'postcss-pxtorem'
+postcssfontmagician      = require 'postcss-font-magician'
+postcssquantityqueries   = require 'postcss-quantity-queries'
+postcssinstagram         = require 'postcss-instagram'
 rucksack                 = require 'rucksack-css'
 browsersync              = require 'browser-sync'
 buffer                   = require 'vinyl-buffer'
@@ -143,6 +146,9 @@ gulp.task 'css', ->
     postcssfocus
     postcsscenter
     postcsspxtorem
+    postcssfontmagician
+    postcssquantityqueries
+    postcssinstagram
     lost
   ]
 
