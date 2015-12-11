@@ -53,6 +53,7 @@ main {
   }
   &__copy {
     color: var(--c-copy);
+    font-size: responsive;
   }
 }
 
@@ -64,6 +65,6 @@ main {
 
 @media (--medium) {
   .article {
-    lost-column: 1/4;
+    lost-column: 1/2;
   }
 }
