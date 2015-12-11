@@ -1,1 +1,69 @@
-@import '_base';
+@lost flexbox no-flex;
+
+:root {
+  /* Colors */
+  --c-title:                #d00;
+  --c-copy:                 #555;
+
+  /* Dimensions */
+
+  /* Media Queries */
+}
+
+@custom-media --small screen and (min-width: 320px);
+@custom-media --medium screen and (min-width: 800px);
+
+body {}
+
+.panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  border-bottom: solid 1px #666;
+  &__avatar {
+    top: center;
+    left: center;
+    border-radius: 100%;
+    border: solid 1px #666;
+  }
+}
+
+main {
+  lost-center: 800px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.articles {
+  lost-flex-container: row;
+}
+
+.article {
+  &__photo {
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__title {
+    color: var(--c-title)
+  }
+  &__copy {
+    color: var(--c-copy);
+  }
+}
+
+@media (--small) {
+  .article {
+    lost-column: 1/1;
+  }
+}
+
+@media (--medium) {
+  .article {
+    lost-column: 1/4;
+  }
+}

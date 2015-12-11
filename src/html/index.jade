@@ -5,13 +5,17 @@ mixin article(title, src, description)
     .article__photo
       img(src='/assets/images/'+src alt="dooooom")
     .article__content
-      h1= title
+      h1.article__title= title
       if description
-        p= description
+        p.article__copy= description
       else
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        p.article__copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 block content
+  .panel
+    img.panel__avatar(src="/assets/images/mask.jpg" alt="The Mask")
   main
     .articles
+      +article('Mos Doom Kicks', 'doom-kick.png')
+      +article('Mos Doom Kicks', 'doom-kick.png')
       +article('Mos Doom Kicks', 'doom-kick.png')
