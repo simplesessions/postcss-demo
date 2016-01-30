@@ -1,6 +1,11 @@
 # PostCSS Doom
 Demo for some PostCSS features.
 
+## Getting Started
+
+    npm install
+    gulp
+
 ## Enhancements/Libraries
 Not part of a spec, but pretty useful.
 - [lost](https://github.com/corysimmons/lost) - PostCSS fractional grid system built with calc() by the guy who built Jeet. Supports masonry, vertical, and waffle grids. http://corysimmons.github.io/lost.
