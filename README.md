@@ -8,7 +8,7 @@ Demo for some PostCSS features.
 
 ## Enhancements/Libraries
 Not part of a spec, but pretty useful.
-- [lost](https://github.com/corysimmons/lost) - PostCSS fractional grid system built with calc() by the guy who built Jeet. Supports masonry, vertical, and waffle grids. http://corysimmons.github.io/lost.
+- [lost](https://github.com/peterramsing/lost) - PostCSS fractional grid system built with calc() by the guy who built Jeet. Supports masonry, vertical, and waffle grids. [http://corysimmons.github.io/lost](http://peterramsing.github.io/lost/).
 - [postcss-quantity-queries](https://github.com/pascalduez/postcss-quantity-queries) - PostCSS plugin enabling quantity-queries
 - [postcss-for](https://github.com/antyakushev/postcss-for) - PostCSS plugin that enables for-loop syntax in your CSS.
 
