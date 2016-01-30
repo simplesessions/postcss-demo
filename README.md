@@ -4,6 +4,7 @@ Demo for some PostCSS features.
 ## Getting Started
 
     npm install
+    mkdmir bower_components
     gulp
 
 ## Enhancements/Libraries
